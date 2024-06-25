@@ -1,4 +1,12 @@
 /* index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
+=======
+
+body {
+   font-family: 'Oswald', sans-serif;
+}
+>>>>>>> 3d0318ca813eaac195bbcd66f8d09dc5fe665c58

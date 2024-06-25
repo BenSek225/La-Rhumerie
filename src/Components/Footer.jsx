@@ -30,7 +30,11 @@ const Footer = () => {
           <ul>
             <li>Adresse: 123 Rue de la Musique</li>
             <li>Téléphone: +123 456 789</li>
+<<<<<<< HEAD
             <li>Email: info@mybeat.com</li>
+=======
+            <li>Email: info@LaRhumerie.com</li>
+>>>>>>> 3d0318ca813eaac195bbcd66f8d09dc5fe665c58
           </ul>
         </div>
         
@@ -48,8 +52,13 @@ const Footer = () => {
       {/* Barre inférieure */}
       <div className="border-t border-gray-800 mt-8 pt-4">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<<<<<<< HEAD
           <div className="text-lg font-oswald">MyBeat</div>
           <div className="text-sm">&copy; 2024 MyBeat. Tous droits réservés.</div>
+=======
+          <div className="text-lg font-oswald">LaRhumerie</div>
+          <div className="text-sm">&copy; 2024 LaRhumerie. Tous droits réservés.</div>
+>>>>>>> 3d0318ca813eaac195bbcd66f8d09dc5fe665c58
         </div>
       </div>
     </footer>
