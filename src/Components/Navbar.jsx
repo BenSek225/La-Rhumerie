@@ -18,10 +18,10 @@ const NavBar = () => {
    return (
       <nav className="bg-black text-white p-6">
          <div className="container mx-auto flex justify-between items-center">
-            <div className="flex items-center">
+            <Link to="/" className="flex items-center">
                <span className="text-3xl font-bold">La Rhumerie </span>
                <span className="text-orange-500 text-3xl font-bold ml-0.5">.</span>
-            </div>
+            </Link>
 
             <div className="hidden md:flex space-x-4">
                <Link to="/" className="hover:text-orange-500 tracking-widest text-lg font-bold">Accueil</Link>
