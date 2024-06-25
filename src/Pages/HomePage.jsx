@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-import React from 'react';
-import NavBar from '../Components/NavBar.jsx';
-import Footer from '../Components/Footer.jsx';
-import Events from '../Components/Events.jsx';
-=======
 import React, { useState } from 'react';
-import Navbar from '../Components/Navbar.jsx';
 import Footer from '../Components/Footer.jsx';
+import Navbar from '../Components/Navbar.jsx';
 import ReservationModal from '../Components/ReservationModal.jsx';
 import { useNavigate } from 'react-router-dom';
->>>>>>> 3d0318ca813eaac195bbcd66f8d09dc5fe665c58
 
 function Home() {
    const navigate = useNavigate();
@@ -24,11 +17,7 @@ function Home() {
    };
 
    return (
-<<<<<<< HEAD
-      <div className="bg-black">
-         <NavBar />
-         <Events />
-=======
+
       <div className='oswald'>
          <Navbar />
          <div className="m-3 p-10 bg-black">
@@ -169,7 +158,6 @@ function Home() {
 
             </div>
          </div>
->>>>>>> 3d0318ca813eaac195bbcd66f8d09dc5fe665c58
          <Footer />
          {isModalOpen && <ReservationModal closeModal={closeModal} />}
       </div>

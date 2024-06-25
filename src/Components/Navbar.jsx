@@ -1,12 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "../index.css";
 
-const NavBar = () => {
+const NavBar = ({ footerRef }) => {
    const [isOpen, setIsOpen] = useState(false);
+   const navigate = useNavigate();
 
    const toggleMenu = () => {
       setIsOpen(!isOpen);
+   };
+
+   const scrollToFooter = (e) => {
+      e.preventDefault();
+      // If you're not already on the home page, navigate there first
+      if (window.location.pathname !== '/home') {
+         navigate('/home');
+         setTimeout(() => {
+            footerRef.current?.scrollIntoView({ behavior: 'smooth' });
+         }, 500); // Wait for the navigation to complete
+      } else {
+         footerRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }
    };
 
    return (
@@ -18,11 +32,10 @@ const NavBar = () => {
             </div>
 
             <div className="hidden md:flex space-x-4">
-               <Link to="/home" className="hover:text-gray-400">Accueil</Link>
-               <Link to="/about" className="hover:text-gray-400">A propos</Link>
+               <Link to="/Home" className="hover:text-gray-400">Accueil</Link>
                <Link to="/menu" className="hover:text-gray-400">Menu</Link>
-               <Link to="/events" className="hover:text-gray-400">Événements</Link>
-               <Link to="/contact" className="hover:text-gray-400">Contact</Link>
+               <Link to="/Evenement" className="hover:text-gray-400">Événements</Link>
+               <a href="/#footer" onClick={scrollToFooter} className="hover:text-gray-400">Contact</a>
             </div>
 
             <div className="md:hidden">
@@ -38,11 +51,9 @@ const NavBar = () => {
          <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} transition-opacity duration-700 ease-in-out`}>
             <div className="flex flex-col space-y-4 mt-4">
                <Link to="/home" className={`hover:text-gray-400 transition-opacity duration-700 ease-out ${isOpen ? 'opacity-100 delay-300' : 'opacity-0 delay-100'}`}>Accueil</Link>
-               <Link to="/about" className={`hover:text-gray-400 transition-opacity duration-700 ease-out ${isOpen ? 'opacity-100 delay-400' : 'opacity-0 delay-200'}`}>A propos</Link>
                <Link to="/menu" className={`hover:text-gray-400 transition-opacity duration-700 ease-out ${isOpen ? 'opacity-100 delay-500' : 'opacity-0 delay-300'}`}>Menu</Link>
-               <Link to="/portfolio" className={`hover:text-gray-400 transition-opacity duration-700 ease-out ${isOpen ? 'opacity-100 delay-600' : 'opacity-0 delay-400'}`}>Portfolio</Link>
-               <Link to="/events" className={`hover:text-gray-400 transition-opacity duration-700 ease-out ${isOpen ? 'opacity-100 delay-700' : 'opacity-0 delay-500'}`}>Événements</Link>
-               <Link to="/contact" className={`hover:text-gray-400 transition-opacity duration-700 ease-out ${isOpen ? 'opacity-100 delay-800' : 'opacity-0 delay-600'}`}>Contact</Link>
+               <Link to="/Evenement" className={`hover:text-gray-400 transition-opacity duration-700 ease-out ${isOpen ? 'opacity-100 delay-700' : 'opacity-0 delay-500'}`}>Événements</Link>
+               <a href="/#footer" onClick={scrollToFooter} className={`hover:text-gray-400 transition-opacity duration-700 ease-out ${isOpen ? 'opacity-100 delay-800' : 'opacity-0 delay-600'}`}>Contact</a>
             </div>
          </div>
       </nav>

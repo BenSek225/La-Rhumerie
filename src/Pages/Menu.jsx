@@ -1,20 +1,20 @@
 import React from 'react';
-import NavBar from '../Components/NavBar';
+import NavBar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
 const Menu = () => {
   // Données simulées pour les sections Rhum et Bière
   const rhums = [
-    { id: 1, name: 'Rhum 1', image: '/path/to/rhum1.jpg' },
-    { id: 2, name: 'Rhum 2', image: '/path/to/rhum2.jpg' },
-    { id: 3, name: 'Rhum 3', image: '/path/to/rhum3.jpg' },
+    { id: 1, name: 'Rhum 1', image: '/Image/img-6.jpg' },
+    { id: 2, name: 'Rhum 2', image: '/Image/img-3.jpg' },
+    { id: 3, name: 'Rhum 3', image: '/Image/img-1.jpg' },
     // Ajoutez d'autres rhums si nécessaire
   ];
 
   const bieres = [
-    { id: 1, name: 'Bière 1', image: '/path/to/beer1.jpg' },
-    { id: 2, name: 'Bière 2', image: '/path/to/beer2.jpg' },
-    { id: 3, name: 'Bière 3', image: '/path/to/beer3.jpg' },
+    { id: 1, name: 'Bière 1', image: 'Image/img-2.jpg' },
+    { id: 2, name: 'Bière 2', image: '/Image/img-4.jpg' },
+    { id: 3, name: 'Bière 3', image: '/Image/img-4.jpg' },
     // Ajoutez d'autres bières si nécessaire
   ];
 

@@ -55,37 +55,37 @@ const EventCard = ({ image, date, name, time }) => {
 const Events = () => {
   const eventList = [
     {
-      image: "/Image/pexels-chris-f-38966-1283219.jpg",
+      image: "/Image/img-1.jpg",
       date: "24 Juin 2024",
       name: "Summer Festival",
       time: "18:00 - 23:00"
     },
     {
-      image: "/Image/pexels-mariapop-339696.jpg",
+      image: "/Image/img-2.jpg",
       date: "30 Juin 2024",
       name: "Music Night",
       time: "20:00 - 01:00"
     },
     {
-      image: "/Image/pexels-the-real-mccoy-rum-1130224996-20876375.jpg",
+      image: "/Image/img-3.jpg",
       date: "30 Juin 2024",
       name: "Music Night",
       time: "20:00 - 01:00"
     },
     {
-      image: "/Image/pexels-the-real-mccoy-rum-1130224996-20876375.jpg",
+      image: "/Image/img-4.jpg",
       date: "30 Juin 2024",
       name: "Music Night",
       time: "20:00 - 01:00"
     },
     {
-      image: "/Image/pexels-mariapop-339696.jpg",
+      image: "/Image/img-5.jpg",
       date: "30 Juin 2024",
       name: "Music Night",
       time: "20:00 - 01:00"
     },
     {
-      image: "/Image/pexels-chris-f-38966-1283219.jpg",
+      image: "/Image/img-6.jpg",
       date: "24 Juin 2024",
       name: "Summer Festival",
       time: "18:00 - 23:00"
