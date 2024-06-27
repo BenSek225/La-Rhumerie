@@ -10,7 +10,7 @@ const ReservationModal = ({ closeModal }) => {
                         <input
                             type="text"
                             required
-                            placeholder='Nom*'
+                            placeholder='Nom'
                             className="bg-black border-gray-200 border-2 shadow appearance-none w-full lg:py-4 lg:px-4 py-3 px-3 sm:py-6 sm:px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         />
                     </div>
@@ -18,7 +18,7 @@ const ReservationModal = ({ closeModal }) => {
                         <input
                             type="email"
                             required
-                            placeholder='Email*'
+                            placeholder='Email'
                             className="bg-black lg:py-4 lg:px-4 border-gray-200 border-2 shadow appearance-none w-full py-3 px-3 sm:py-6 sm:px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         />
                     </div>
@@ -26,16 +26,16 @@ const ReservationModal = ({ closeModal }) => {
                         <input
                             type="number"
                             required
-                            placeholder='Nombre de personne*'
-                            className="bg-black lg:py-4 lg:px-4 border-gray-200 border-2 shadow appearance-none w-full py-3 px-3 sm:py-6 sm:px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder='Nombre de personne'
+                            className="bg-black lg:py-4 lg:px-4 border-gray-200 border-2 shadow appearance-none w-full py-3 px-3 sm:py-6 sm:px-6 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
                         />
                     </div>
                     <div className="mb-6 sm:mb-10">
                         <input
                             type="datetime-local"
-                            placeholder='Date et heure*'
+                            placeholder='Date et heure'
                             required
-                            className="bg-white lg:py-4 lg:px-4 border-gray-200 border-2 shadow appearance-none w-full py-3 px-3 sm:py-6 sm:px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className="bg-black lg:py-4 lg:px-4 border-gray-200 border-2 shadow appearance-none w-full py-3 px-3 sm:py-6 sm:px-6 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
                         />
                     </div>
 

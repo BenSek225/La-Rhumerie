@@ -25,7 +25,6 @@ const NavBar = () => {
 
             <div className="hidden md:flex space-x-4">
                <Link to="/" className="hover:text-orange-500 tracking-widest text-lg font-bold">Accueil</Link>
-               <Link to="/about" className="hover:text-orange-500 tracking-widest text-lg font-bold">A propos</Link>
                <Link to="/menu" className="hover:text-orange-500 tracking-widest text-lg font-bold">Menu</Link>
                <Link to="/evenement" className="hover:text-orange-500 tracking-widest text-lg font-bold">Événements</Link>
                <Link to="/contact" className="hover:text-orange-500 tracking-widest text-lg font-bold">Contact</Link>
@@ -53,9 +52,8 @@ const NavBar = () => {
          <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} transition-opacity duration-700 ease-in-out`}>
             <div className="flex flex-col mt-4">
                <Link to="/" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} border-b border-gray-500 pb-2`}>Accueil</Link>
-               <Link to="/about" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-100' : 'translate-x-full delay-100'} border-b border-gray-500 pb-2`}>A propos</Link>
                <Link to="/menu" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-200' : 'translate-x-full delay-200'} border-b border-gray-500 pb-2`}>Menu</Link>
-               <Link to="/events" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-300' : 'translate-x-full delay-300'} border-b border-gray-500 pb-2`}>Événements</Link>
+               <Link to="/evenement" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-300' : 'translate-x-full delay-300'} border-b border-gray-500 pb-2`}>Événements</Link>
                <Link to="/contact" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-400' : 'translate-x-full delay-400'} pb-2`}>Contact</Link>
             </div>
          </div>
