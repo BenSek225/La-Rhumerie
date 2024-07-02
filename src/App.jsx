@@ -6,9 +6,10 @@ import Home from './Pages/HomePage';
 import Evenement from './Pages/Evenement';
 import Menu from './Pages/Menu';
 import BoissonDetails from './Pages/BoissonDetails';
-import { boissons } from './Data/boissons.js';
+import { boissons } from './Datas/boissons';
 
 function App() {
+
   return (
     <Router>
       <Routes>

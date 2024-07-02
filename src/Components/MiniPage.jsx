@@ -12,29 +12,25 @@ const MiniPage = ({ toggleMiniPage }) => {
             </button>
 
             <div>
-               <img src="/Logo/Logo-rhum.png" alt="Logo" />
+               <img src="/Logo/Logo-Rhum.png" alt="Logo" />
             </div>
 
             <div className='mt-10'>
-               <p className="mb-4 text-center">Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. La Rhumerie.</p>
+               <p className="mb-4 text-center text-2xl">Bienvenue à la Rhumerie, où chaque visite est une célebration des sens et un voyage a travers les arômes enivrants des meilleures rhum du monde. Nichée au coeur de notre belle ville d'abidjan, La Rhumerie n'est pas seulement un bar; c'est un sanctuaire pour les amateurs de rhum, les épicuriens et ceux en quête d'une experience unique.</p>
             </div>
 
             <div className="flex space-x-7 items-center justify-center mt-10">
-               <a href="https://www.facebook.com" className="bg-white rounded-full p-2 hover:bg-orange-500">
-                  <i className="arrow-down-circle"></i>
+            <div href="#" className="bg-white rounded-full p-1 w-8 h-8"></div>
+               <a href="https://www.facebook.com/profile.php?id=100095418309636" className="bg-white w-8 h-8 rounded-full p-0.5 hover:bg-orange-500">
+                  <img src="/Icones/facebook.png" alt="LogoFacebook" />
                </a>
-               <a href="https://www.twitter.com" className="bg-white rounded-full p-2 hover:bg-orange-500">
-                  <i className="arrow-down-circle"></i>
+               <a href="https://www.instagram.com/larhumerie.z4?igsh=OTdjMXBwNjQwdDdi" className="bg-white w-8 h-8 rounded-full p-0.5 hover:bg-orange-500">
+                  <img src="/Icones/instagram.png" alt="LogoInstagram" />
                </a>
-               <a href="https://www.instagram.com" className="bg-white rounded-full p-2 hover:bg-orange-500">
-                  <i className="arrow-down-circle"></i>
+               <a href="mailto:contact@larhumerie.ci" className="bg-white w-8 h-8 rounded-full p-0.5 hover:bg-orange-500">
+                  <img src="/Icones/gmail.png" alt="LogoGmail" />
                </a>
-               <a href="https://www.tiktok.com" className="bg-white rounded-full p-2 hover:bg-orange-500">
-                  <i className="arrow-down-circle"></i>
-               </a>
-               <a href="mailto:example@gmail.com" className="bg-white rounded-full p-2 hover:bg-orange-500">
-                  <i className="arrow-down-circle"></i>
-               </a>
+               <div href="#" className="bg-white rounded-full p-1 w-8 h-8"></div>
             </div>
          </div>
       </div>

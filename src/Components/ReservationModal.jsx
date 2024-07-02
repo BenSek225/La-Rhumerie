@@ -4,14 +4,16 @@ const ReservationModal = ({ closeModal }) => {
     return (
         <div className="px-2 fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
             <div className="bg-black p-10 sm:p-20 border-white border-2 shadow-lg w-full sm:w-3/4 sm:h-2.5/3 lg:w-1/2 lg:h-full">
-                <h2 className="text-3xl sm:text-5xl lg:text-4xl text-center text-white mb-10">Réserver une table</h2>
-                <form>
+                <h2 className="text-3xl sm:text-5xl lg:text-4xl text-center text-white mb-10">Réserver Une Table
+                    <span className="text-orange-500 text-3xl font-bold ml-0.5">.</span>
+                </h2>
+                <form method='get' >
                     <div className="mb-6 sm:mb-10">
                         <input
                             type="text"
                             required
                             placeholder='Nom'
-                            className="bg-black border-gray-200 border-2 shadow appearance-none w-full lg:py-4 lg:px-4 py-3 px-3 sm:py-6 sm:px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className="bg-black border-gray-200 border-2 shadow appearance-none w-full lg:py-4 lg:px-4 py-3 px-3 sm:py-6 sm:px-6 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
                         />
                     </div>
                     <div className="mb-6 sm:mb-10">
@@ -19,7 +21,7 @@ const ReservationModal = ({ closeModal }) => {
                             type="email"
                             required
                             placeholder='Email'
-                            className="bg-black lg:py-4 lg:px-4 border-gray-200 border-2 shadow appearance-none w-full py-3 px-3 sm:py-6 sm:px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className="bg-black lg:py-4 lg:px-4 border-gray-200 border-2 shadow appearance-none w-full py-3 px-3 sm:py-6 sm:px-6 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
                         />
                     </div>
                     <div className="mb-6 sm:mb-10">
@@ -33,7 +35,6 @@ const ReservationModal = ({ closeModal }) => {
                     <div className="mb-6 sm:mb-10">
                         <input
                             type="datetime-local"
-                            placeholder='Date et heure'
                             required
                             className="bg-black lg:py-4 lg:px-4 border-gray-200 border-2 shadow appearance-none w-full py-3 px-3 sm:py-6 sm:px-6 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
                         />

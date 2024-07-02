@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import "../index.css";
 import MiniPage from './MiniPage';
 
 const NavBar = () => {
@@ -18,17 +17,16 @@ const NavBar = () => {
    return (
       <nav className="bg-black text-white p-6">
          <div className="container mx-auto flex justify-between items-center">
-            <Link to="/" className="flex items-center">
-               <span className="text-3xl font-bold">La Rhumerie </span>
-               <span className="text-orange-500 text-3xl font-bold ml-0.5">.</span>
+            <Link to="/">
+               <img src="/Logo/RHUMERIE.png" alt="Logo" className='w-40 h-12 md:w-48 md:h-12 lg:w-56 lg:h-14'/>
             </Link>
 
-            <div className="hidden md:flex space-x-4">
+            <ul className="hidden md:flex space-x-4">
                <Link to="/" className="hover:text-orange-500 tracking-widest text-lg font-bold">Accueil</Link>
                <Link to="/menu" className="hover:text-orange-500 tracking-widest text-lg font-bold">Menu</Link>
                <Link to="/evenement" className="hover:text-orange-500 tracking-widest text-lg font-bold">Événements</Link>
-               <Link to="/contact" className="hover:text-orange-500 tracking-widest text-lg font-bold">Contact</Link>
-            </div>
+               <li className="hover:text-orange-500 tracking-widest text-lg font-bold"><a href="#contact">Contact</a></li>
+            </ul>
 
             <div className="md:hidden">
                <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -50,12 +48,12 @@ const NavBar = () => {
 
          {/* Menu déroulant pour les appareils mobiles */}
          <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} transition-opacity duration-700 ease-in-out`}>
-            <div className="flex flex-col mt-4">
+            <ul className="flex flex-col mt-4">
                <Link to="/" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} border-b border-gray-500 pb-2`}>Accueil</Link>
                <Link to="/menu" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-200' : 'translate-x-full delay-200'} border-b border-gray-500 pb-2`}>Menu</Link>
                <Link to="/evenement" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-300' : 'translate-x-full delay-300'} border-b border-gray-500 pb-2`}>Événements</Link>
-               <Link to="/contact" className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-400' : 'translate-x-full delay-400'} pb-2`}>Contact</Link>
-            </div>
+               <li className={`hover:text-orange-500 text-center transition-transform duration-700 ease-out transform ${isOpen ? 'translate-x-0 delay-400' : 'translate-x-full delay-400'} pb-2`}><a href="#contact">Contact</a></li>
+            </ul>
          </div>
 
          {/* MiniPage for large screens */}
