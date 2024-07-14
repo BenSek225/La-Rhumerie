@@ -89,7 +89,7 @@ const Footer = () => {
               &copy; 2024 LaRhumerie. Site developer by  
                 <Link 
                   className='ms-1 text-purple-500'
-                  to="https://www.instagram.com/le_polychrone?igsh=NzZ1NwxmM2JiM21z">
+                  to="https://www.instagram.com/sek.y_ben?igsh=MTBnN3hybnp1eGpnbw==">
                     Ben
                 </Link> & 
                 <Link 
